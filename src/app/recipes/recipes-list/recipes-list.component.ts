@@ -1,3 +1,4 @@
+import { RecipeService } from './../recipe.service';
 import { EventEmitter } from '@angular/core';
 import { Component, Output } from '@angular/core';
 import { Recipe } from '../recipe.model';
@@ -8,9 +9,11 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipes-list.component.css']
 })
 export class RecipesListComponent {
-   recipes: Recipe[] = [
-    new Recipe('A Test Recipe', 'This is simply test description', 'https://www.bbcgoodfoodme.com/assets/legacy/recipe/recipe-image/2019/03/hassleback_roast_lamb.jpg')
-   ];
+   recipes: Recipe[];
+
+   constructor(private recipeService: RecipeService) {
+    this.recipes = recipeService.getRecipes();
+   }
 
    @Output() recipeWasSelected = new EventEmitter<Recipe>();
    
