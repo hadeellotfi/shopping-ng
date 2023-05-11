@@ -1,32 +1,49 @@
-# FirstApp
+# Recipe and Shopping List App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
+This is an Angular web application that allows users to create, view, and manage recipes and shopping lists. It includes the following features:
+
+- View a list of recipes, including images and basic information
+- View details for a specific recipe, including ingredients and instructions
+- Create new recipes and edit existing ones
+- Add recipes to a shopping list and view the list of ingredients
+- Mark ingredients as purchased in the shopping list
 
 ## Features
+
 * Shopping list: Create and manage lists of items you need to purchase, whether for a single recipe or for your weekly grocery run. Add, remove, and edit items on your list, and categorize them by type of food or store section to make shopping more efficient.
 
 * Recipe book: Store and organize your favorite recipes in one convenient place. Add recipes manually or import them from popular recipe websites, and categorize them by cuisine, dietary needs, or meal type. Easily search for recipes by ingredient, keyword, or tag.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To get started with this application, follow these steps:
 
-## Code scaffolding
+1. Clone this repository to your local machine
+2. Navigate to the project directory and run `npm install` to install the necessary dependencies
+3. Run `ng serve` to start the development server
+4. Open your web browser and navigate to `http://localhost:4200`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Components
 
-## Build
+This application includes several Angular components that are used to display and manage recipes and shopping lists:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Recipe List Component: Displays a list of all available recipes
+- Recipe Detail Component: Displays detailed information about a specific recipe
+- Recipe Edit Component: Allows users to create or edit a recipe
+- Shopping List Component: Displays a list of ingredients that have been added to the shopping list
 
-## Running unit tests
+## Services
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This application includes several Angular services that are used to manage data and perform other tasks:
 
-## Running end-to-end tests
+- Recipe Service: Manages the list of available recipes and provides methods for creating, editing, and deleting recipes
+- Shopping List Service: Manages the shopping list and provides methods for adding, removing, and updating items
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Contributing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+If you would like to contribute to this project, please fork the repository and submit a pull request with your changes. Before submitting a pull request, please make sure that your changes are well-tested and that they follow the coding standards and conventions used in the rest of the application.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
