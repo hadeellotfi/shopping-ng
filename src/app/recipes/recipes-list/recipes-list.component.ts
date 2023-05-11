@@ -15,9 +15,4 @@ export class RecipesListComponent {
     this.recipes = recipeService.getRecipes();
    }
 
-   @Output() recipeWasSelected = new EventEmitter<Recipe>();
-   
-   onRecipeSelected(recipe: Recipe){
-    this.recipeWasSelected.emit(recipe);
-   }
 }
